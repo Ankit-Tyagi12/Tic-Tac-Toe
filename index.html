@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: blueviolet;
+}
+
+.heading {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  background-color: wheat;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: beige;
+}
+</style>
+</head>
+<body>
+<h1 class="heading">TIC TAC TOE</h1>
+<div class="container" id="container">
+  <div class="cell" onclick="handleClick(0, 0)" id="cell00"></div>
+  <div class="cell" onclick="handleClick(0, 1)" id="cell01"></div>
+  <div class="cell" onclick="handleClick(0, 2)" id="cell02"></div>
+  <div class="cell" onclick="handleClick(1, 0)" id="cell10"></div>
+  <div class="cell" onclick="handleClick(1, 1)" id="cell11"></div>
+  <div class="cell" onclick="handleClick(1, 2)" id="cell12"></div>
+  <div class="cell" onclick="handleClick(2, 0)" id="cell20"></div>
+  <div class="cell" onclick="handleClick(2, 1)" id="cell21"></div>
+  <div class="cell" onclick="handleClick(2, 2)" id="cell22"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
